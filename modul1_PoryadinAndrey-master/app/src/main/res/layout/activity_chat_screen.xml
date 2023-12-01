@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="100dp"
-            android:text="Обсуждения"
+            android:text="@string/obsug"
             android:textColor="@color/white"
             android:textSize="20dp"
             android:textStyle="bold"
@@ -71,7 +71,7 @@
             android:layout_height="43dp"
             android:layout_below="@id/chatListView"
             android:background="@drawable/edittextstyle"
-            android:hint="Напишите сообщение..."
+            android:hint="@string/writetext"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -98,7 +98,7 @@
             android:layout_width="86dp"
             android:layout_height="38dp"
             android:background="@drawable/today_chat"
-            android:text="Сегодня"
+            android:text="@string/today"
             android:textAllCaps="false"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -108,7 +108,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.144" />
 
-        <!-- Другие элементы вашего интерфейса -->
+
 
     </android.support.constraint.ConstraintLayout>
 

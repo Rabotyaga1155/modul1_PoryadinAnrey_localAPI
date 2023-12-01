@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
-        android:text="Обсуждения"
+        android:text="@string/obsug"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -76,7 +76,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Игра престолов"
+                android:text="@string/prestolgame"
                 android:textColor="@color/white"
                 android:textStyle="bold">
 
@@ -85,7 +85,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Иван: Смотрели уже последнюю серию? Я просто поверить не..."
+                android:text="@string/ivantext"
                 android:textColor="@color/white">
 
             </TextView>
@@ -128,7 +128,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Игра престолов"
+                android:text="@string/prestolgame"
                 android:textColor="@color/white"
                 android:textStyle="bold">
 
@@ -137,7 +137,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Иван: Смотрели уже последнюю серию? Я просто поверить не..."
+                android:text="@string/ivantext"
                 android:textColor="@color/white">
 
             </TextView>
@@ -182,7 +182,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Игра престолов"
+                android:text="@string/prestolgame"
                 android:textColor="@color/white"
                 android:textStyle="bold">
 
@@ -191,7 +191,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Иван: Смотрели уже последнюю серию? Я просто поверить не..."
+                android:text="@string/ivantext"
                 android:textColor="@color/white">
 
             </TextView>
@@ -232,7 +232,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Игра престолов"
+                android:text="@string/prestolgame"
                 android:textColor="@color/white"
                 android:textStyle="bold">
 
@@ -241,7 +241,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Иван: Смотрели уже последнюю серию? Я просто поверить не..."
+                android:text="@string/ivantext"
                 android:textColor="@color/white">
 
             </TextView>

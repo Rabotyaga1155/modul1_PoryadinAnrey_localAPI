@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">worldCinema_poryadin</string>
+    <string name="obsug">Обсуждения</string>
+    <string name="prestolgame">Игра престолов</string>
+    <string name="ivantext">Иван: Смотрели уже последнюю серию? Я просто поверить не...</string>
+    <string name="writetext">Напишите сообщение...</string>
+    <string name="today">Сегодня</string>
+    <string name="kollec">Коллекции</string>
+    <string name="izbr">Избранное</string>
+    <string name="kg">Когда-нибудь</string>
+    <string name="togo">В поездку</string>
+    <string name="createcollec">Создать коллекцию</string>
+    <string name="name">Название</string>
+    <string name="iconpeel">Выбрать иконку</string>
+    <string name="save">Сохранить</string>
+    <string name="takeicon">Выбрать иконку</string>
+    <string name="captain_marvel">Captain Marvel</string>
+    <string name="namestr">Воланд Иванов</string>
+    <string name="emailstr">voland.ivanov@gmail.com</string>
+    <string name="rename">Изменить</string>
+    <string name="settings">Настройки</string>
+    <string name="history">История</string>
+    <string name="exit">Выход</string>
+    <string name="maik">E-mail</string>
+    <string name="pass">Пароль</string>
+    <string name="log">Войти</string>
+    <string name="reg">Регистрация</string>
+    <string name="namee">Имя</string>
+    <string name="pas">Пароль</string>
+    <string name="e_mail">E-mail</string>
+    <string name="seecpas">Повторите пароль</string>
+    <string name="surname">Фамилия</string>
+    <string name="zareg">Зарегистрироваться</string>
+    <string name="ihaveacc">У меня уже есть аккаунт</string>
 </resources>

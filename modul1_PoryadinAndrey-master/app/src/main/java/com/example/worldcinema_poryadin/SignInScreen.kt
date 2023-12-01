@@ -41,6 +41,11 @@ class SignInScreen : AppCompatActivity() {
     fun logbut_click(view: View) {
         val userEmail = email.text.toString()
 
+        //val intent = Intent(this@SignInScreen, MainScreen::class.java)
+        //startActivity(intent)
+
+
+
         apiService.getLogins().enqueue(object : Callback<ApiResponse> {
             override fun onResponse(call: Call<ApiResponse>, response: Response<ApiResponse>) {
                 if (response.isSuccessful) {
@@ -76,5 +81,7 @@ class SignInScreen : AppCompatActivity() {
                 ).show()
             }
         })
+
+         
     }
     }
