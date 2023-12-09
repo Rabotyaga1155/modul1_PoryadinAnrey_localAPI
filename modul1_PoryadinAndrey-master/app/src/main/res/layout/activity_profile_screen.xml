@@ -8,9 +8,10 @@
     android:background="@color/back">
 
     <TextView
+        android:id="@+id/nameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/namestr"
+        android:text="@string/nullstring"
         android:textColor="@color/white"
         android:textSize="24dp"
         android:textStyle="bold"
@@ -24,9 +25,10 @@
     </TextView>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ell"
+        android:id="@+id/avatarImageView"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:src="@drawable/sonic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.092"
@@ -37,9 +39,10 @@
     </ImageView>
 
     <TextView
+        android:id="@+id/rankText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/emailstr"
+        android:text="@string/nullstring"
         android:textColor="@color/colorDarkerGray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,6 +54,7 @@
     </TextView>
 
     <TextView
+        android:onClick="change_click"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/rename"

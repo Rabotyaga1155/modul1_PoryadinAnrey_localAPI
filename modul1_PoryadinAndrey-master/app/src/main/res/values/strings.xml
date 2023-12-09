@@ -32,4 +32,6 @@
     <string name="surname">Фамилия</string>
     <string name="zareg">Зарегистрироваться</string>
     <string name="ihaveacc">У меня уже есть аккаунт</string>
+    <string name="event_date">Event Date</string>
+    <string name="nullstring" />
 </resources>

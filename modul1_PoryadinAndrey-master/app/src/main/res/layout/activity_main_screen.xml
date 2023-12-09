@@ -1,70 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainScreen"
     android:background="@color/back">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/linearLayout"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp" />
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/captain_marvel"
+        android:text="@string/nullstring"
         android:textColor="@color/white"
         android:textSize="24dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.044">
+        android:layout_below="@id/recyclerView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
 
-    </TextView>
-
-    <ImageView
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/captainmarvel"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.374">
+        android:text="@string/nullstring"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
 
-    </ImageView>
+
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="62dp"
         android:background="#000000"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        app:layout_constraintVertical_bias="1">
+        android:layout_alignParentBottom="true">
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:src="@drawable/actionactive"
-            android:background="@color/black">
-
-        </ImageButton>
+            android:background="@color/black"/>
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:src="@drawable/actioninactive"
-            android:background="@color/black">
-
-        </ImageButton>
+            android:background="@color/black"/>
 
         <ImageButton
             android:onClick="collections_click"
@@ -72,9 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:src="@drawable/action"
-            android:background="@color/black">
-
-        </ImageButton>
+            android:background="@color/black"/>
 
         <ImageButton
             android:onClick="profile_click"
@@ -82,11 +88,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:src="@drawable/fifth"
-            android:background="@color/black">
-
-        </ImageButton>
+            android:background="@color/black"/>
 
     </LinearLayout>
 
-
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

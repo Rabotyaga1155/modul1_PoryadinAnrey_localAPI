@@ -73,19 +73,21 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/friendName1"
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/prestolgame"
+                android:text="@string/nullstring"
                 android:textColor="@color/white"
                 android:textStyle="bold">
 
             </TextView>
 
             <TextView
+                android:id="@+id/friendScore1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/ivantext"
+                android:text="@string/nullstring"
                 android:textColor="@color/white">
 
             </TextView>
@@ -125,19 +127,21 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/friendName2"
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/prestolgame"
+                android:text="@string/nullstring"
                 android:textColor="@color/white"
                 android:textStyle="bold">
 
             </TextView>
 
             <TextView
+                android:id="@+id/friendScore2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/ivantext"
+                android:text="@string/nullstring"
                 android:textColor="@color/white">
 
             </TextView>
@@ -179,74 +183,29 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/friendName3"
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/prestolgame"
+                android:text="@string/nullstring"
                 android:textColor="@color/white"
                 android:textStyle="bold">
 
             </TextView>
 
             <TextView
+                android:id="@+id/friendScore3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/ivantext"
+                android:text="@string/nullstring"
                 android:textColor="@color/white">
 
             </TextView>
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:onClick="chat1_click"
-        android:layout_marginTop="100dp"
-        android:layout_width="414dp"
-        android:layout_height="98dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.649">
 
-        <ImageView
-            android:layout_marginLeft="10dp"
-            android:layout_width="92dp"
-            android:layout_height="84dp"
-            android:src="@drawable/photo1"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.051"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.166">
 
-        </ImageView>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/prestolgame"
-                android:textColor="@color/white"
-                android:textStyle="bold">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ivantext"
-                android:textColor="@color/white">
-
-            </TextView>
-        </LinearLayout>
-    </LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>

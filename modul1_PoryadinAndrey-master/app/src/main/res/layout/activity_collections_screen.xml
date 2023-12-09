@@ -96,30 +96,9 @@
 
     </ImageButton>
 
-    <ImageView
 
-        android:src="@drawable/icon35"
-        android:id="@+id/image2"
-        android:layout_width="81dp"
-        android:layout_height="80dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.358" />
 
-    <ImageView
-        android:src="@drawable/icon7"
-        android:id="@+id/image3"
-        android:layout_width="81dp"
-        android:layout_height="80dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.538" />
+
 
     <TextView
         android:text="@string/izbr"
@@ -150,42 +129,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.185" />
 
-    <TextView
-        android:text="@string/kg"
-        android:id="@+id/text2"
-        android:layout_width="234dp"
-        android:layout_height="47dp"
-        android:textColor="@color/white"
-        android:textSize="19dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.762"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.362">
 
 
 
 
-    </TextView>
-
-    <TextView
-        android:text="@string/togo"
-        android:id="@+id/text3"
-        android:layout_width="234dp"
-        android:layout_height="47dp"
-        android:textColor="@color/white"
-        android:textSize="19dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.762"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.538">
-
-
-    </TextView>
 
 </android.support.constraint.ConstraintLayout>

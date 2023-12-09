@@ -16,7 +16,7 @@ class SignInScreen : AppCompatActivity() {
 
     private val apiService:ApiService by lazy {
         Retrofit.Builder()
-            .baseUrl("http://192.168.1.103:3000/") // IP Comp
+            .baseUrl("https://virtserver.swaggerhub.com/focus.lvlup2021/LEVEL_UP_MOBILE/1.0.0/") // IP Comp
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(ApiService::class.java)
@@ -41,30 +41,23 @@ class SignInScreen : AppCompatActivity() {
     fun logbut_click(view: View) {
         val userEmail = email.text.toString()
 
-        //val intent = Intent(this@SignInScreen, MainScreen::class.java)
-        //startActivity(intent)
-
-
-
-        apiService.getLogins().enqueue(object : Callback<ApiResponse> {
-            override fun onResponse(call: Call<ApiResponse>, response: Response<ApiResponse>) {
+        apiService.getLogins().enqueue(object : Callback<UserResponse> {
+            override fun onResponse(call: Call<UserResponse>, response: Response<UserResponse>) {
                 if (response.isSuccessful) {
-                    val logins = response.body()?.logins ?: emptyList()
+                    val username = response.body()?.user?.username
 
-                    if (logins.contains(userEmail)) {
+                    if (username == userEmail) {
                         val intent = Intent(this@SignInScreen, MainScreen::class.java)
                         startActivity(intent)
                     } else {
-
                         Toast.makeText(
                             this@SignInScreen,
-                            "Неверный Login",
+                            "Неверный логин",
                             Toast.LENGTH_SHORT
                         ).show()
                     }
                 } else {
-
-                    val errorBody = response.errorBody()?.string()
+                    val errorBody = response.message()
                     Toast.makeText(
                         this@SignInScreen,
                         "Ошибка: $errorBody",
@@ -73,7 +66,7 @@ class SignInScreen : AppCompatActivity() {
                 }
             }
 
-            override fun onFailure(call: Call<ApiResponse>, t: Throwable) {
+            override fun onFailure(call: Call<UserResponse>, t: Throwable) {
                 Toast.makeText(
                     this@SignInScreen,
                     "Ошибка сети: ${t.message}",
@@ -81,7 +74,7 @@ class SignInScreen : AppCompatActivity() {
                 ).show()
             }
         })
+    }
+    }
 
-         
-    }
-    }
+
